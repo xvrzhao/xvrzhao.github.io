@@ -1,27 +1,67 @@
 <!DOCTYPE html>
-<html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title> web font from FontsForWeb.com</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="font.css">
-        <style type="text/css">
-		/* when @font-face is defined(it is in font.css) you can add the font to any rule by using font-family */
-		h1 {
-			font-family: 'fzmOldTypewriter';
-		}
-		</style>
-    </head>
-    <body>
-    	<!-- <h1>Thank you for using FontsForWeb.com</h1> -->
-        <div style="padding-top: 400px;padding-left: 100px;">
-        <p class="fontsforweb_fontid_1383">Look in the source of this file to see how to embed this font on your website</p>
-        <p class="fontsforweb_fontid_1383">How in the (source) how to embed this font on :) <- => /hello Bb-G F-C</p>
-        <p class="fontsforweb_fontid_1383">
-            Discov is a generic gRPC service registration and discovery / load balancing component.
-        </p>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jazz Tools</title>
+    <style>
+        @font-face {
+            font-family: 'fzmOldTypewriter';
+            src: local('fzmOldTypewriter'), url('./fonts/fzmOldTypewriter.woff') format('woff');
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            font-family: 'fzmOldTypewriter';
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        .body-div {
+            height: 100%;
+            /* border: 3px red solid; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navi-div {
+            /* border: 1px black solid; */
+            height: 100px;
+            width: 20%;
+            /* margin-left: 10%; */
+        }
+
+        .content-div {
+            /* border: 1px black solid; */
+            height: 100px;
+            width: 50%;
+        }
+
+        code {
+            font-family: 'fzmOldTypewriter';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body-div">
+        <div class="navi-div">
+
         </div>
-    </body>
+        <div class="content-div">
+            Jens Larsen is a jazz guitarist, composer and arranger in the groups Træben, Yvonne Smeets Group, Jazz4kids
+            and Wijnen, Winter & Larsen.
+
+            Besides performing, he teaches guitar at the Royal Conservatory in The Hague. He also produces jazz guitar
+            lessons on YouTube and writes articles for jazz publications.
+        </div>
+    </div>
+</body>
+
 </html>
