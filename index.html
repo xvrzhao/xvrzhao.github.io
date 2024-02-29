@@ -55,13 +55,37 @@
 
         </div>
         <div class="content-div">
-            Jens Larsen is a jazz guitarist, composer and arranger in the groups Træben, Yvonne Smeets Group, Jazz4kids
-            and Wijnen, Winter & Larsen.
+            <div id="cont1">
+                Jens Larsen is a jazz guitarist, composer and arranger in the groups Træben, Yvonne Smeets Group,
+                Jazz4kids
+                and Wijnen, Winter & Larsen.
 
-            Besides performing, he teaches guitar at the Royal Conservatory in The Hague. He also produces jazz guitar
-            lessons on YouTube and writes articles for jazz publications.
+                Besides performing, he teaches guitar at the Royal Conservatory in The Hague. He also produces jazz
+                guitar
+                lessons on YouTube and writes articles for jazz publications.
+            </div>
+            <div id="cont2" style="display: none;">
+                ♫ Happy Rice Shop Month, June <span onclick="test2()">:)</span> 
+            </div>
+            <br>
+            <div style="float: right;" id="button">
+                <span onclick="test()">Next -></span>
+            </div>
         </div>
     </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script>
+        function test() {
+            $('#button').fadeOut('slow')
+            $('#cont1').fadeOut('slow')
+            setTimeout(() => {
+                $('#cont2').fadeIn('slow')
+            }, 1000);
+        }
+        function test2() {
+            $('#cont2').html('<img src="./smile.gif" alt="">')
+        }
+    </script>
 </body>
 
 </html>
